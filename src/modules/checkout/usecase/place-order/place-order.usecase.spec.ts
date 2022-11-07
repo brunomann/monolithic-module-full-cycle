@@ -75,7 +75,7 @@ describe("PlaceOrderUseCase unit test", () => {
         afterAll(() => {
             jest.useRealTimers();
         });
- 
+        
         //@ts-expect-error - no params in constructor
         const placeOrderUseCase = new PlaceOrderUsecase();
 
