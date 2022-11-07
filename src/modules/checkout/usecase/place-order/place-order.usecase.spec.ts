@@ -75,7 +75,7 @@ describe("PlaceOrderUseCase unit test", () => {
         afterAll(() => {
             jest.useRealTimers();
         });
-        
+
         //@ts-expect-error - no params in constructor
         const placeOrderUseCase = new PlaceOrderUsecase();
 
@@ -86,7 +86,7 @@ describe("PlaceOrderUseCase unit test", () => {
 
             //@ts-expect-error - force set catalogFacade
             placeOrderUseCase["_catalogFacade"] = mockCatalogFacade;
-
+ 
             await expect(placeOrderUseCase["getProduct"]("0")).rejects.toThrow(
                 new Error("Product not found")
             );
