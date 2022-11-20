@@ -67,7 +67,7 @@ describe("Invoice repository unit test", () => {
         expect(invoiceDb.complement).toBe(invoice.address.complement);
         expect(invoiceDb.city).toBe(invoice.address.city);
         expect(invoiceDb.state).toBe(invoice.address.state);
-        expect(invoiceDb.zipcode).toBe(invoice.address.zipCode);
+        expect(invoiceDb.zipCode).toBe(invoice.address.zipCode);
         expect(invoiceDb.items[0].id).toBe(item1.id.id);
         expect(invoiceDb.items[0].name).toBe(item1.name);
         expect(invoiceDb.items[0].price).toBe(item1.price);

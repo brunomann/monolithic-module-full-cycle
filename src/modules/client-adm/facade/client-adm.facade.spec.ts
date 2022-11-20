@@ -39,7 +39,14 @@ describe("ClientAdm Facade unit test", () => {
             id: "1",
             name: "John",
             email: "x@x.com",
-            address: "Rua 1"
+            address: "Rua 1",
+            document: "Document 1",
+            street: "Street 1",
+            complement: "Complement 1",
+            number: "Number 1",
+            state: "State 1",
+            zipCode: "Zipcode 1",
+            city: "City 1",
         };
         await facade.add(input);
 
@@ -66,7 +73,14 @@ describe("ClientAdm Facade unit test", () => {
             id: "1",
             name: "John",
             email: "x@x.com",
-            address: "Rua 1"
+            address: "Rua 1",
+            document: "Document 1",
+            street: "Street 1",
+            complement: "Complement 1",
+            number: "Number 1",
+            state: "State 1",
+            zipCode: "Zipcode 1",
+            city: "City 1",
         };
         await facade.add(input);
 
@@ -87,7 +101,14 @@ describe("ClientAdm Facade unit test", () => {
             id: "1",
             name: "John",
             email: "x@x.com",
-            address: "Rua 1"
+            address: "Rua 1",
+            document: "Document 1",
+            street: "Street 1",
+            complement: "Complement 1",
+            number: "Number 1",
+            state: "State 1",
+            zipCode: "Zipcode 1",
+            city: "City 1",
         };
         await facadeFactory.add(input);
 

@@ -16,7 +16,14 @@ describe("Add Client  usecase unit test", () => {
         const input = {
             name: "Client 1",
             email: "x@x.com",
-            address: "Rua 1"
+            address: "Rua 1",
+            document: "Document 1",
+            street: "Street 1",
+            complement: "Complement 1",
+            number: "Number 1",
+            state: "State 1",
+            zipcode: "Zipcode 1",
+            city: "City 1",
         };
 
         const result = await usecase.execute(input);

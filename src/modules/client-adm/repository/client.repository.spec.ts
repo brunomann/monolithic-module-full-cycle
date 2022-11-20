@@ -50,7 +50,14 @@ describe("Client repository unit test", () => {
             id: new Id("1"),
             name: "Cliente",
             email: "x@x.com",
-            address: "Rua 1"
+            address: "Rua 1",
+            document: "Document 1",
+            street: "Street 1",
+            complement: "Complement 1",
+            city: "City 1",
+            state: "State 1",
+            zipcode: "Zipcode 1",
+            number: "Number 1",
         });
         const repository = new ClientRepository();
         await repository.add(client);
@@ -62,6 +69,12 @@ describe("Client repository unit test", () => {
         expect(clientDb.name).toEqual(client.name);
         expect(clientDb.email).toEqual(client.email);
         expect(clientDb.address).toEqual(client.address);
+        expect(clientDb.document).toEqual(client.document);
+        expect(clientDb.street).toEqual(client.street);
+        expect(clientDb.complement).toEqual(client.complement);
+        expect(clientDb.city).toEqual(client.city);
+        expect(clientDb.state).toEqual(client.state);
+        expect(clientDb.number).toEqual(client.number);
         expect(clientDb.createdAt).toStrictEqual(client.createdAt);
         expect(clientDb.updatedAt).toStrictEqual(client.updatedAt);
     });

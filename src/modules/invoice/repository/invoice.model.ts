@@ -33,7 +33,7 @@ export default class InvoiceModel extends Model {
     declare state: string;
 
     @Column({allowNull: false})
-    declare zipcode: string;
+    declare zipCode: string;
 
     @HasMany(() => ProductModel)
     declare items: ProductModel[];

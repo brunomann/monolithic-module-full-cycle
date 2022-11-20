@@ -63,7 +63,7 @@ describe("Invoice facade unit test", () => {
         expect(invoiceDb.complement).toBe(inputGenerateInvoice.complement);
         expect(invoiceDb.city).toBe(inputGenerateInvoice.city);
         expect(invoiceDb.state).toBe(inputGenerateInvoice.state);
-        expect(invoiceDb.zipcode).toBe(inputGenerateInvoice.zipCode);
+        expect(invoiceDb.zipCode).toBe(inputGenerateInvoice.zipCode);
         expect(invoiceDb.items[0].id).toBe(item1.id);
         expect(invoiceDb.items[0].name).toBe(item1.name);
         expect(invoiceDb.items[0].price).toBe(item1.price);
@@ -100,7 +100,7 @@ describe("Invoice facade unit test", () => {
         expect(invoiceDb.complement).toBe(inputGenerateInvoice.complement);
         expect(invoiceDb.city).toBe(inputGenerateInvoice.city);
         expect(invoiceDb.state).toBe(inputGenerateInvoice.state);
-        expect(invoiceDb.zipcode).toBe(inputGenerateInvoice.zipCode);
+        expect(invoiceDb.zipCode).toBe(inputGenerateInvoice.zipCode);
         expect(invoiceDb.items[0].id).toBe(item1.id);
         expect(invoiceDb.items[0].name).toBe(item1.name);
         expect(invoiceDb.items[0].price).toBe(item1.price);

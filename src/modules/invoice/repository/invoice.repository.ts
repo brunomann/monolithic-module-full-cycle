@@ -8,7 +8,7 @@ import ProductModel from "./product.model";
 export default class InvoiceRepository implements InvoiceGateway
 {
     async createInvoice(invoiceInput: invoiceEntity): Promise<void> {
-        
+        console.log(invoiceInput)
         const invoice = {
             id: invoiceInput.id.id,
             name: invoiceInput.name,
@@ -18,7 +18,7 @@ export default class InvoiceRepository implements InvoiceGateway
             complement: invoiceInput.address.complement,
             city: invoiceInput.address.city,
             state: invoiceInput.address.state,
-            zipcode: invoiceInput.address.zipCode,
+            zipCode: invoiceInput.address.zipCode,
             items: invoiceInput.items.map((item) => ({id: item.id.id, name: item.name, price: item.price}))
         };
 
@@ -43,7 +43,7 @@ export default class InvoiceRepository implements InvoiceGateway
               complement: invoiceDb.complement,
               city: invoiceDb.city,
               state: invoiceDb.state,
-              zipCode: invoiceDb.zipcode,
+              zipCode: invoiceDb.zipCode,
             },
             items: invoiceDb.items.map((item) => ({ id: item.id, name: item.name, price: item.price}) ),
             total: invoiceDb.items.reduce((total, item) => total + item.price, 0),
