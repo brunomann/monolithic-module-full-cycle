@@ -267,7 +267,6 @@ describe("PlaceOrderUseCase unit test", () => {
                     amount: output.total
                 });
                 expect(mockInvoiceFacade.createInvoice).toHaveBeenCalledTimes(0)
-
             });
 
             it("should be approved", async () => {
